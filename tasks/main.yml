@@ -3,7 +3,7 @@
 - name: regolith ~> configure apt-repository for {{ ansible_distribution }} {{ ansible_distribution_release }}
   become: true
   block:
-    - name: Regolith |no apt key
+    - name: Regolith | no apt key
       ansible.builtin.get_url:
         url: https://regolith-desktop.org/regolith.key
         dest: /usr/share/keyrings/regolith-archive-keyring.asc
@@ -18,9 +18,8 @@
   ansible.builtin.apt:
     name:
       - regolith-desktop
-      - regolith-compositor-picom-glx
       - regolith-look-blackhole
-      - regolith-look-default
+      - regolith-compositor-picom-glx
       - i3xrocks-focused-window-name
       - i3xrocks-rofication
       - i3xrocks-info
