@@ -18,6 +18,7 @@
   ansible.builtin.apt:
     name:
       - regolith-desktop
+      - regolith-look-default
       - regolith-look-blackhole
       - regolith-compositor-picom-glx
       - i3xrocks-focused-window-name
