@@ -26,7 +26,7 @@ Including an example of how to use your role (for instance, with variables passe
 
 ### License
 
-BSD
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Author Information
 
